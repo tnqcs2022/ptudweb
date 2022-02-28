@@ -13,7 +13,6 @@ exports.findAllFavorite = async(req, res) => {
     res.send({message: "findAllFavorite handler"});
 };
 
-
 //find a single contact with an id
 exports.findOne = async(req, res) => {
     res.send({message: "findOne handler"});
