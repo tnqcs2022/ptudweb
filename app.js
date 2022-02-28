@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 // const {BadRequestError, errorHandler} = require("./app/errors");
 const app = express();
-// const setupContactRoutes = require("./app/routes/contact.routes");
+const setupContactRoutes = require("./app/routes/contact.routes");
 
 app.use(cors());
 
@@ -14,7 +14,7 @@ app.get('/', (req, res) =>{
     res.json({message: "Welcome to contact book application."});
 });
 
-// setupContactRoutes(app);
+setupContactRoutes(app);
 
 // //handle 404 response
 // app.use((req, res, next) => {

@@ -8,6 +8,12 @@ exports.findAll = async(req, res) => {
     res.send({message: "findAll handler"});
 };
 
+//retrieve all favorite contacts of a user from the database
+exports.findAllFavorite = async(req, res) => {
+    res.send({message: "findAllFavorite handler"});
+};
+
+
 //find a single contact with an id
 exports.findOne = async(req, res) => {
     res.send({message: "findOne handler"});
