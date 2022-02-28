@@ -1,20 +1,24 @@
 {
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.3",
-    "expresss": "^0.0.0",
-    "mongoose": "^6.2.3"
-  },
   "name": "contactbook-backend",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "Tran Nhut Quang",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnqcs2022/ptudweb.git"
+  },
+  "author": "Nhut Quang",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+  "bugs": {
+    "url": "https://github.com/tnqcs2022/ptudweb/issues"
+  },
+  "homepage": "https://github.com/tnqcs2022/ptudweb#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongoose": "^6.2.3"
   }
 }
