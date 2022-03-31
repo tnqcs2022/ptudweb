@@ -16,10 +16,12 @@ const schema = mongoose.Schema(
     },
     {timestamps: true}
 );
+
 //replace _id with id an remove __V
 schema.method("toJSON", function () {
     const {__v, _id, ...object} = this.toObject();
     object.id = _id;
     return object;    
 });
+
 module.exports = mongoose.model("contact", schema);

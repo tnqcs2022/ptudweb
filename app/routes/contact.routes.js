@@ -26,4 +26,5 @@ module.exports = app =>{
     router.delete("/", contacts.deleteAll);
 
     app.use("/api/contacts", router);
+    
 };

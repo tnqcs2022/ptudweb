@@ -27,7 +27,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
     //middleware xu ly loi tap trung.
     //trong cac doan code xu ly o cac route, goi next(error)
-    //  se chuyen ve middleware xu ly loi nay
+    //   se chuyen ve middleware xu ly loi nay
     errorHandler.handleError(error, res);
 });
 
