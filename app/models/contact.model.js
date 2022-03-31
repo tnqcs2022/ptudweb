@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
+
 const schema = mongoose.Schema(
     {
-        name:{
+        name: {
             type: String,
             required: [true, "Contact name is required"],
         },
-        email:{
+        email: {
             type: String,
             trim: true,
             lowercase: true,
@@ -17,11 +18,10 @@ const schema = mongoose.Schema(
     {timestamps: true}
 );
 
-//replace _id with id an remove __V
-schema.method("toJSON", function () {
-    const {__v, _id, ...object} = this.toObject();
-    object.id = _id;
-    return object;    
+schema.method("toJSON", function(){
+    const {__v, __id, ...object} = this.toObject();
+    object.id= __id;
+    return object;
 });
 
-module.exports = mongoose.model("contact", schema);
+module.exports =mongoose.model("contact",schema);
